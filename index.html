@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora Lógica</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="logo-container">
+          <div class="logo-image">
+            <img
+              src="Image/images.jpg"
+              alt="Logo UGMA"
+              width="120"
+              height="120"
+            />
+          </div>
+        </div>
+        <div class="title">Calculadora Lógica</div>
+      </div>
+      <div class="main-content">
+        <div class="left-panel">
+          <div class="history-section">
+            <div class="history-header">
+              <h2 class="section-title">
+                <i class="history"></i> Historial
+                <button class="toggle-history" id="toggleHistory">
+                  <i class="fas fa-chevron-down"></i>
+                </button>
+              </h2>
+            </div>
+            <div class="history-content" id="historyContent">
+              <div class="history-list" id="historyList">
+                <div class="history-item">
+                  <div class="history-expression">p ∧ q</div>
+                  <div class="history-result true">
+                    Resultado: Verdadero (p=1, q=1)
+                  </div>
+                </div>
+                <div class="history-item">
+                  <div class="history-expression">¬p → q</div>
+                  <div class="history-result false">
+                    Resultado: Falso (p=1, q=0)
+                  </div>
+                </div>
+              </div>
+              <button class="clear-history" id="clearHistory">
+                Borrar Historial
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="center-panel">
+          <div class="calculator-section">
+            <h2 class="section-title">Calculadora de Tablas de Verdad</h2>
+            <div class="screen">
+              <div class="expression" id="expression">Expresión:</div>
+              <div class="result" id="result">Resultado:</div>
+            </div>
+            <div class="keypad">
+              <button class="key variable" data-value="p">p</button>
+              <button class="key variable" data-value="q">q</button>
+              <button class="key variable" data-value="r">r</button>
+              <button class="key variable" data-value="s">s</button>
+              <button class="key clear" id="clear">AC</button>
+
+              <button class="key operator" data-value="¬">¬</button>
+              <button class="key operator" data-value="∧">∧</button>
+              <button class="key operator" data-value="∨">∨</button>
+              <button class="key" data-value="(">(</button>
+              <button class="key" data-value=")">)</button>
+              <button class="key operator" data-value="=">=</button>
+              <button class="key operator" data-value="≠">≠</button>
+              <button class="key clear" id="delete">DEL</button>
+
+              <button class="key variable" data-value="1">Verdadero (1)</button>
+              <button class="key variable" data-value="0">Falso (0)</button>
+              <button class="key equals" id="calculate">Calcular</button>
+            </div>
+          </div>
+          <div></div>
+        </div>
+
+        <div class="right-panel">
+          <div class="students-section">
+            <h2 class="section-title">Elaborado Por:</h2>
+            <div class="students-list">
+              <div class="student-card">
+                <span>Fabian Dorta</span>
+              </div>
+              <div class="student-card">
+                <span>José Malavé</span>
+              </div>
+              <div class="student-card">
+                <span>Leonardo González</span>
+              </div>
+              <div class="student-card">
+                <span>Sebastián Balestrini</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="copyright-footer">
+          &copy; 2020-2026 Universidad Nororiental Privada Gran Mariscal de
+          Ayacucho. Derechos en Trámite
+        </div>
+      </footer>
+    </div>
+    <script link="logicBool.js" src="logicBool.js"></script>
+  </body>
+</html>
